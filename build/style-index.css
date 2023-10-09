@@ -1,0 +1,100 @@
+/*!***************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/style.scss ***!
+  \***************************************************************************************************************************************************************************************************************************************/
+button.ws-menu-toggle {
+  padding: 0.75rem;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.ws-hbicon-part1, .ws-hbicon-part2, .ws-hbicon-part3 {
+  height: 2px;
+  width: 28px;
+  margin: 6px 0px 6px 0px;
+  transition: all 0.15s ease;
+}
+
+.ws-hbicon-part2 {
+  width: 24px;
+}
+
+.ws-hbmenu-spacer {
+  height: 0px;
+  width: 28px;
+}
+
+/* animated 'X' transition effect */
+.ws-menu-toggle[aria-expanded=true] .ws-hbicon-part1 {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.ws-menu-toggle[aria-expanded=true] .ws-hbicon-part2 {
+  transform: scaleX(0);
+}
+
+.ws-menu-toggle[aria-expanded=true] .ws-hbicon-part3 {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+/* Hover effects */
+.ws-menu-toggle:hover .ws-hbicon-part1, .ws-menu-toggle:hover .ws-hbicon-part3 {
+  width: 24px;
+}
+
+.ws-menu-toggle:hover .ws-hbicon-part2 {
+  width: 28px;
+}
+
+/* Remove bullet points from list items */
+.ws-sidebar-content li {
+  display: block;
+}
+
+.ws-sidebar-content ul, .ws-sidebar-content .wp-block-loginout {
+  display: flex;
+  flex-direction: column;
+  align-items: normal;
+  list-style: none;
+  padding-inline: 0;
+}
+
+.wp-block-willsides-hidden-sidebar-menu .wp-block-navigation {
+  align-items: normal;
+}
+
+.ws-sidebar-content {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  width: 380px;
+  box-sizing: border-box;
+  visibility: hidden;
+  z-index: 2000;
+  transition: all 0.3s ease;
+  padding: 0 2rem;
+}
+
+.ws-sidebar-content.ws-sidebar-left {
+  right: 100%;
+}
+
+.ws-sidebar-content.ws-sidebar-right {
+  left: 100vw;
+}
+
+.ws-menu-toggle[aria-expanded=true] + .ws-sidebar-content.ws-sidebar-right {
+  visibility: visible;
+  transform: translateX(-380px);
+}
+
+.ws-menu-toggle[aria-expanded=true] + .ws-sidebar-content.ws-sidebar-left {
+  visibility: visible;
+  transform: translateX(380px);
+}
+
+/*# sourceMappingURL=style-index.css.map*/
