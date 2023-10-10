@@ -28,9 +28,21 @@
       "type": "string",
       "default": "right"
     },
-    "backgroundColor": {
-      "type": "string",
-      "default": "background"
+    "style": {
+      "type": "object",
+      "default": {
+        "color": {
+          "background": "#000000f2",
+          "text": "#ffffff"
+        },
+        "elements": {
+          "link": {
+            "color": {
+              "text": "#ffffff"
+            }
+          }
+        }
+      }
     }
   },
   "textdomain": "hamburger-dropdown-menu",
