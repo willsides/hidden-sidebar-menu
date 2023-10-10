@@ -8,8 +8,12 @@ import metadata from './block.json';
 
 const ALLOWED_BLOCKS = [ 'core/categories', 'core/paragraph', 'core/social-link', 'core/navigation', 'core/navigation-submenu', 'core/home-link', 'core/navigation-link', 'core/category', 'core/spacer', 'core/social-links', 'core/search', 'core/loginout' ];
 const TEMPLATE = [
-	[ 'core/loginout', {} ],
-	[ 'core/categories', {} ]
+	[ 'core/spacer', {height:"128px"} ],
+	[ 'core/search', {label:"Search",showLabel:false,buttonText:"Search",buttonUseIcon:true} ],
+	[ 'core/spacer', {"height":"24px"} ],
+	[ 'core/navigation', {overlayMenu:"never",layout:{type:"flex",orientation:"vertical"}} ],
+	[ 'core/spacer', {"height":"24px"} ],
+	[ 'core/loginout', {"displayLoginAsForm":true} ],
   ];
 
 registerBlockType( metadata.name, {

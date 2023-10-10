@@ -27,6 +27,10 @@
 		"sidebarSide": {
 			"type": "string",
 			"default": "right"
+		},
+		"backgroundColor": {
+			"type": "string",
+			"default": "background"
 		}
 	},
 	"textdomain": "hamburger-dropdown-menu",

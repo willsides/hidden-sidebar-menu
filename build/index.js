@@ -26,7 +26,26 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const ALLOWED_BLOCKS = ['core/categories', 'core/paragraph', 'core/social-link', 'core/navigation', 'core/navigation-submenu', 'core/home-link', 'core/navigation-link', 'core/category', 'core/spacer', 'core/social-links', 'core/search', 'core/loginout'];
-const TEMPLATE = [['core/loginout', {}], ['core/categories', {}]];
+const TEMPLATE = [['core/spacer', {
+  height: "128px"
+}], ['core/search', {
+  label: "Search",
+  showLabel: false,
+  buttonText: "Search",
+  buttonUseIcon: true
+}], ['core/spacer', {
+  "height": "24px"
+}], ['core/navigation', {
+  overlayMenu: "never",
+  layout: {
+    type: "flex",
+    orientation: "vertical"
+  }
+}], ['core/spacer', {
+  "height": "24px"
+}], ['core/loginout', {
+  "displayLoginAsForm": true
+}]];
 (0,_wordpress_blocks__WEBPACK_IMPORTED_MODULE_1__.registerBlockType)(_block_json__WEBPACK_IMPORTED_MODULE_5__.name, {
   edit: ({
     attributes,
@@ -213,7 +232,7 @@ module.exports = window["wp"]["components"];
   \************************/
 /***/ (function(module) {
 
-module.exports = JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"willsides/hidden-sidebar-menu","version":"0.1.0","title":"Hidden Sidebar Menu","category":"widgets","icon":"menu-alt3","description":"A menu that slides in from the right side of the screen when the user clicks the toggle button","example":{},"supports":{"html":false,"anchor":true,"color":{"background":true,"text":true,"link":true,"gradients":false},"customClassName":true},"attributes":{"iconColor":{"type":"string","default":"rgba(0, 0, 0, 1)"},"sidebarSide":{"type":"string","default":"right"}},"textdomain":"hamburger-dropdown-menu","editorScript":"file:./index.js","style":"file:./style-index.css","viewScript":"file:./view.js"}');
+module.exports = JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"willsides/hidden-sidebar-menu","version":"0.1.0","title":"Hidden Sidebar Menu","category":"widgets","icon":"menu-alt3","description":"A menu that slides in from the right side of the screen when the user clicks the toggle button","example":{},"supports":{"html":false,"anchor":true,"color":{"background":true,"text":true,"link":true,"gradients":false},"customClassName":true},"attributes":{"iconColor":{"type":"string","default":"rgba(0, 0, 0, 1)"},"sidebarSide":{"type":"string","default":"right"},"backgroundColor":{"type":"string","default":"background"}},"textdomain":"hamburger-dropdown-menu","editorScript":"file:./index.js","style":"file:./style-index.css","viewScript":"file:./view.js"}');
 
 /***/ })
 
