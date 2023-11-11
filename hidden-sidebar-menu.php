@@ -5,7 +5,7 @@
  * Description:       A menu that slides in from the right side of the screen when the user clicks the toggle button
  * Requires at least: 6.1
  * Requires PHP:      7.0
- * Version:           0.1.0
+ * Version:           1.0.0
  * Author:            Will Sides
  * License:           GPL-2.0-or-later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
